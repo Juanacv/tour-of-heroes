@@ -3,4 +3,5 @@ export interface Hero {
     name: string;
     alterego: string;
     superpower: string;
+    heroscore?: number;
 }

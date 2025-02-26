@@ -27,12 +27,13 @@ export class HeroesComponent implements OnInit {
       .subscribe(heroes => this.heroes = heroes);
   }
 
-  add(name: string, alterego: string, superpower: string): void {
+  add(name: string, alterego: string, superpower: string, heroscore: number): void {
     name = name.trim();
     alterego = alterego.trim();
     superpower = superpower.trim();
+    heroscore = Number(heroscore);
 
-    if (!name || !alterego || !superpower) {
+    if (!name || !alterego || !superpower || !heroscore) {
       return; // Validación básica para asegurarse de que todos los campos estén llenos
     }
 
@@ -40,6 +41,7 @@ export class HeroesComponent implements OnInit {
       name,
       alterego,
       superpower,
+      heroscore,
     };
 
     this.heroService.addHero(newHero).subscribe((hero) => {

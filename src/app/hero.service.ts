@@ -10,7 +10,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 })
 export class HeroService {
 
-  private heroesUrl = 'http://127.0.0.1/heroes-api/heroes';
+  private heroesUrl = 'http://127.0.0.1/angular/angular-tour-of-heroes/heroes-api/heroes';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };

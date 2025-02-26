@@ -7,11 +7,14 @@
   <input id="new-hero-alterego" #heroAlterEgo />
 
   <label for="new-hero-superpower">Super poder: </label>
-  <input id="new-hero-superpower" #heroSuperpower />
+  <input id="new-hero-superpower" #heroSuperPower />
+
+  <label for="new-hero-heroscore">Puntuación super: </label>
+  <input id="new-hero-heroscore" #heroHeroScore />
 
   <!-- (click) passes input value to add() and then clears the input -->
-  <button type="button" class="add-button"
-    (click)="add(heroName.value, heroAlterEgo.value, heroSuperpower.value); heroName.value=''; heroAlterEgo.value=''; heroSuperpower.value=''">
+  <button type="button" class="add-button" (click)="add(heroName.value, heroAlterEgo.value, heroSuperPower.value, +heroHeroScore.value); 
+    heroName.value=''; heroAlterEgo.value=''; heroSuperPower.value=''; heroHeroScore.value=''">
     Añadir héroe
   </button>
 </div>

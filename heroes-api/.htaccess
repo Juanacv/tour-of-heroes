@@ -16,7 +16,7 @@ RewriteEngine On
 RewriteCond %{HTTP:Authorization} ^(.*)
 RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 
-RewriteBase /heroes-api/
+RewriteBase /angular/angular-tour-of-heroes/heroes-api/
 
 # Si la ruta no es un archivo existente, ni una carpeta
 # Reescribir al index
