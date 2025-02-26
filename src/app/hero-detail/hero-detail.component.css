@@ -2,21 +2,30 @@
 label {
   color: #435960;
   font-weight: bold;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
+
 input {
   font-size: 1em;
   padding: .5rem;
 }
+
 button {
   margin-top: 20px;
+  margin-right: .5rem;
   background-color: #eee;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
+  display: block;
 }
+
 button:hover {
   background-color: #cfd8dc;
 }
+
 button:disabled {
   background-color: #eee;
   color: #ccc;

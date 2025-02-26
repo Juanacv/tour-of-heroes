@@ -3,13 +3,13 @@
     <div><span>id: </span>{{hero.id}}</div>
     <div><span>name: </span>{{hero.name}}</div>
     <div>
-        <label for="hero-name">name:</label>
+        <label for="hero-name">Nombre de héroe:</label>
         <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
-        <label for="hero-alterego">alterego:</label>
+        <label for="hero-alterego">Alter Ego:</label>
         <input id="hero-alterego" [(ngModel)]="hero.alterego" placeholder="alterego" />
-        <label for="hero-superpower">superpower:</label>
+        <label for="hero-superpower">Super poder:</label>
         <input id="hero-superpower" [(ngModel)]="hero.superpower" placeholder="superpower" />
-        <button type="button" (click)="save()">save</button>
+        <button type="button" (click)="save()">Guardar</button>
     </div>
 </div>
 <button type="button" (click)="goBack()">Volver</button>
